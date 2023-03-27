@@ -79,6 +79,7 @@ export default {
 ul li {
     list-style-type: none;
     padding-left: 12px;
+
 }
 
 .nav-bar a {

@@ -58,28 +58,18 @@ export default {
 
 <style scoped>
 /* DEBUG */
-.debug .footer-top-container {
-    background-color: black;
-}
 
 .debug .footer-down-container {
     background-color: #303030;
 }
 
-.debug .footer-top .links-container {
-    height: 200px;
-    background-color: aqua;
-}
 
-.debug .links-container>div {
-    width: calc(100%/3);
-    background-color: blue;
-    border: 2px solid white;
-}
 
 /* FINE DEBUG */
 
-
+.footer-top-container {
+    background-image: url(../img/footer-bg.jpg);
+}
 
 .footer-top {
     max-width: 80%;
@@ -94,6 +84,16 @@ export default {
 
 .links-container>div {
     width: calc(100%/3);
+    padding: 0 10px;
+}
+
+.links-container .links ul li {
+    list-style-type: none;
+    color: rgba(167, 167, 167, 0.595);
+}
+
+.links-container .links h3 {
+    color: white;
 }
 
 
