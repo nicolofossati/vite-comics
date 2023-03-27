@@ -2,7 +2,9 @@
 
 <template>
     <div class="main-container debug">
-        <h1>Lorem ipsum dolor sit amet.</h1>
+        <div class="main-content">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+        </div>
     </div>
 </template>
 
@@ -13,9 +15,16 @@
 
 }
 
+
+
 /*  FINE DEBUG */
 .main-container {
     background-color: #1c1c1c;
+}
+
+.main-content {
+    max-width: 60%;
+    margin: auto;
     padding: 20px 0;
 }
 </style>

@@ -20,9 +20,4 @@ export default {
   </div>
 </template>
 
-<style >
-.container {
-  max-width: 60%;
-  margin: auto;
-}
-</style>
+<style ></style>

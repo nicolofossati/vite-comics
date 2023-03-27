@@ -2,14 +2,16 @@
 
 <template>
     <div class="header-container debug">
-        <img src="../img/dc-logo.png" alt="logo-dc">
-        <div class="nav-bar">
-            <ul>
-                <li><a href="">ONE</a></li>
-                <li><a href="">TWO</a></li>
-                <li><a href="">THREE</a></li>
-                <li><a href="">FOUR</a></li>
-            </ul>
+        <div class="header-content">
+            <img src="../img/dc-logo.png" alt="logo-dc">
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="">ONE</a></li>
+                    <li><a href="">TWO</a></li>
+                    <li><a href="">THREE</a></li>
+                    <li><a href="">FOUR</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </template>
@@ -21,9 +23,13 @@
 }
 
 /*  FINE DEBUG */
-.header-container {
+.header-container {}
+
+.header-content {
     display: flex;
     justify-content: space-between;
+    max-width: 60%;
+    margin: auto;
 }
 
 .nav-bar ul {
