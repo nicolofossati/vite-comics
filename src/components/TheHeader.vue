@@ -1,4 +1,43 @@
-<script></script>
+<script>
+export default {
+    data() {
+        return {
+            navBar: [
+                {
+                    text: "CHARACTERS"
+                },
+                {
+                    text: "COMICS"
+                },
+                {
+                    text: "MOVIES"
+                },
+                {
+                    text: "TV"
+                },
+                {
+                    text: "GAMES"
+                },
+                {
+                    text: "COLLECTIBLES"
+                },
+                {
+                    text: "VIDEOS"
+                },
+                {
+                    text: "FANS"
+                },
+                {
+                    text: "NEWS"
+                },
+                {
+                    text: "SHOP"
+                }
+            ]
+        };
+    },
+};
+</script>
 
 <template>
     <div class="header-container debug">
@@ -6,10 +45,7 @@
             <img src="../img/dc-logo.png" alt="logo-dc">
             <div class="nav-bar">
                 <ul>
-                    <li><a href="">ONE</a></li>
-                    <li><a href="">TWO</a></li>
-                    <li><a href="">THREE</a></li>
-                    <li><a href="">FOUR</a></li>
+                    <li v-for="link in navBar"><a href="">{{ link.text }}</a></li>
                 </ul>
             </div>
         </div>
@@ -17,18 +53,21 @@
 </template>
 
 <style scoped>
-.header-container {}
-
 .header-content {
     display: flex;
     justify-content: space-between;
-    max-width: 60%;
+    max-width: 80%;
     margin: auto;
 }
 
 .header-content>img {
     width: 80px;
     padding: 10px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
 }
 
 .nav-bar ul {
@@ -39,6 +78,12 @@
 
 ul li {
     list-style-type: none;
-    padding: 10px;
+    padding-left: 12px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #565656;
 }
 </style>

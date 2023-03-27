@@ -23,7 +23,7 @@
 }
 
 .main-content {
-    max-width: 60%;
+    max-width: 80%;
     margin: auto;
     padding: 20px 0;
 }

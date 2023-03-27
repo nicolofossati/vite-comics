@@ -1,13 +1,41 @@
-<script></script>
+<script>
+export default {
+    data() {
+        return {
+            footerLinks: [
+                {
+                    title: "DC COMICS",
+                    links: ['Characters', 'Comics', 'Movies', 'TV', 'Games', 'Videos', 'News']
+                },
+                {
+                    title: "SHOP",
+                    links: ['Shop DC', 'Shop DC Collectibles']
+                },
+                {
+                    title: "DC",
+                    links: ['Terms Of USe', 'Privacy Policy (New)', 'Ad Choices', 'Advertising', 'Jobs', 'Subscriptions', 'Talent Workshops', 'CPSC Certificates', 'Ratings', 'Shop Help', 'Contact Us']
+                },
+                {
+                    title: "SITES",
+                    links: ['DC', 'MAD Magazine', 'DC Kids', 'DC Universe', 'DC Power Visa']
+                }
+            ]
+        }
+    }
+}
+</script>
 
 <template>
     <div class="footer-container debug">
         <div class="footer-top-container">
             <div class="footer-top">
                 <div class="links-container">
-                    <div class="left-links"></div>
-                    <div class="center-links"></div>
-                    <div class="right-links"></div>
+                    <div class="links" v-for="obj in footerLinks">
+                        <h3>{{ obj.title }}</h3>
+                        <ul>
+                            <li v-for="(link, index) in obj.links">{{ link }}</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -54,7 +82,7 @@
 
 
 .footer-top {
-    max-width: 60%;
+    max-width: 80%;
     margin: auto;
     padding: 30px 0;
 }
