@@ -1,7 +1,7 @@
 <script></script>
 
-<template class="debug">
-    <div class="header-container">
+<template>
+    <div class="header-container debug">
         <img src="../img/dc-logo.png" alt="logo-dc">
         <div class="nav-bar">
             <ul>
@@ -14,9 +14,9 @@
     </div>
 </template>
 
-<style>
+<style scoped>
 /*   DEBUG */
-.debug .nav-bar ul {
+.debug .nav-bar {
     background-color: aqua;
 }
 
@@ -29,6 +29,7 @@
 .nav-bar ul {
     display: flex;
     flex-direction: row;
+    padding: 0;
 }
 
 ul li {
