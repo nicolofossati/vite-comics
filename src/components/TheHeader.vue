@@ -17,12 +17,6 @@
 </template>
 
 <style scoped>
-/*   DEBUG */
-.debug .nav-bar {
-    background-color: aqua;
-}
-
-/*  FINE DEBUG */
 .header-container {}
 
 .header-content {
@@ -30,6 +24,11 @@
     justify-content: space-between;
     max-width: 60%;
     margin: auto;
+}
+
+.header-content>img {
+    width: 80px;
+    padding: 10px;
 }
 
 .nav-bar ul {

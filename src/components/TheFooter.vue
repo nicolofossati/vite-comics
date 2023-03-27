@@ -14,7 +14,7 @@
 
         <div class="footer-down-container">
             <div class="footer-down">
-                <div>BUTTON</div>
+                <div class="bttn">BUTTON</div>
                 <div class="social">
                     <span>FOLLOW US</span>
                     <div></div>
