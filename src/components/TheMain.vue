@@ -42,7 +42,6 @@ export default {
 .current-series-tag {
     color: white;
     position: absolute;
-    z-index: 2;
     padding: 10px;
     background-color: #0282f9;
     height: 40px;

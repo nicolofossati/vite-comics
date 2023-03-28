@@ -1,27 +1,45 @@
-<script></script>
+<script>
+export default {
+    data() {
+        return {
+            products: [
+                {
+                    "img": "buy-comics-digital-comics.png",
+                    "title": "DIGITAL COMICS"
+                },
+                {
+                    "img": "buy-comics-merchandise.png",
+                    "title": "DC MERCHANDISE"
+                },
+                {
+                    "img": "buy-comics-subscriptions.png",
+                    "title": "SUBSCRIPTION"
+                },
+                {
+                    "img": "buy-comics-shop-locator.png",
+                    "title": "COMIC SHOP LOCATOR"
+                },
+                {
+                    "img": "buy-dc-power-visa.svg",
+                    "title": "CD POWER VISA"
+                }
+            ]
+        }
+    },
+    methods: {
+        getImageUrl(name) {
+            return new URL(`../img/${name}`, import.meta.url).href;
+        }
+    }
+}
+</script>
 
 <template>
     <div class="products-container debug">
         <div class="products-content">
-            <div class="product">
-                <img src="../img/buy-comics-digital-comics.png">
-                <div class="product-name"><span>DIGITAL COMICS</span></div>
-            </div>
-            <div class="product">
-                <img src="../img/buy-comics-merchandise.png">
-                <div class="product-name"><span>DC MERCHANDISE</span></div>
-            </div>
-            <div class="product">
-                <img src="../img/buy-comics-subscriptions.png">
-                <div class="product-name"><span>SUBSCRIPTION</span></div>
-            </div>
-            <div class="product">
-                <img src="../img/buy-comics-shop-locator.png">
-                <div class="product-name"><span>COMIC SHOP LOCATOR</span></div>
-            </div>
-            <div class="product">
-                <img src="../img/buy-dc-power-visa.svg">
-                <div class="product-name"><span>CD POWER VISA</span></div>
+            <div class="product" v-for="(product, index) in products" :key="`img-${index}`">
+                <img :src="getImageUrl(product.img)">
+                <div class="product-name"><span>{{ product.title }}</span></div>
             </div>
         </div>
     </div>

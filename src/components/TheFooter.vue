@@ -45,11 +45,11 @@ export default {
                 <div class="bttn">SING-UP NOW!</div>
                 <div class="social">
                     <span>FOLLOW US</span>
-                    <img src="../img/footer-facebook.png" alt="">
-                    <img src="../img/footer-twitter.png" alt="">
-                    <img src="../img/footer-youtube.png" alt="">
-                    <img src="../img/footer-pinterest.png" alt="">
-                    <img src="../img/footer-periscope.png" alt="">
+                    <img src="../img/footer-facebook.png" alt="fb logo">
+                    <img src="../img/footer-twitter.png" alt="twitter logo">
+                    <img src="../img/footer-youtube.png" alt="yt logo">
+                    <img src="../img/footer-pinterest.png" alt="pinterest logo">
+                    <img src="../img/footer-periscope.png" alt="perscope logo">
                 </div>
             </div>
         </div>
@@ -67,11 +67,11 @@ export default {
     padding: 30px 0;
 
     .links-container {
-        width: calc(100%/3);
         display: flex;
+        flex-wrap: wrap;
 
         &>div {
-            width: calc(100%/3);
+            width: calc(100%/8);
             padding: 0 10px;
         }
 
