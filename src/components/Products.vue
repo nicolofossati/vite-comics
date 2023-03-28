@@ -28,15 +28,10 @@
 </template>
 
 <style scoped>
-/*DEBUG */
-.debug {
-    height: 100px;
-}
-
-
-/* FINE DEBUG */
 .products-container {
     background-color: #0282f9;
+    height: 100px;
+    padding: 25px;
 }
 
 .products-content {
@@ -59,5 +54,6 @@
     display: flex;
     align-items: center;
     padding: 0 10px;
+    color: white;
 }
 </style>

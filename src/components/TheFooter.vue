@@ -42,31 +42,21 @@ export default {
 
         <div class="footer-down-container">
             <div class="footer-down">
-                <div class="bttn">BUTTON</div>
+                <div class="bttn">SING-UP NOW!</div>
                 <div class="social">
                     <span>FOLLOW US</span>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <img src="../img/footer-facebook.png" alt="">
+                    <img src="../img/footer-twitter.png" alt="">
+                    <img src="../img/footer-youtube.png" alt="">
+                    <img src="../img/footer-pinterest.png" alt="">
+                    <img src="../img/footer-periscope.png" alt="">
                 </div>
             </div>
         </div>
     </div>
 </template>
 
-<style scoped>
-/* DEBUG */
-
-.debug .footer-down-container {
-    background-color: #303030;
-}
-
-
-
-/* FINE DEBUG */
-
+<style scoped lang="scss">
 .footer-top-container {
     background-image: url(../img/footer-bg.jpg);
 }
@@ -75,34 +65,59 @@ export default {
     max-width: 80%;
     margin: auto;
     padding: 30px 0;
+
+    .links-container {
+        width: calc(100%/3);
+        display: flex;
+
+        &>div {
+            width: calc(100%/3);
+            padding: 0 10px;
+        }
+
+        .links ul li {
+            list-style-type: none;
+            color: rgba(167, 167, 167, 0.595);
+        }
+
+        .links h3 {
+            color: white;
+        }
+    }
 }
 
-.footer-top .links-container {
-    width: calc(100%/3);
-    display: flex;
+.footer-down-container {
+    background-color: #303030;
 }
-
-.links-container>div {
-    width: calc(100%/3);
-    padding: 0 10px;
-}
-
-.links-container .links ul li {
-    list-style-type: none;
-    color: rgba(167, 167, 167, 0.595);
-}
-
-.links-container .links h3 {
-    color: white;
-}
-
 
 .footer-down {
-    max-width: 60%;
+    max-width: 80%;
     margin: auto;
     padding: 15px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.bttn {
+    padding: 10px;
+    color: white;
+    border: 2px solid #0282f9;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social span {
+    font-weight: 800;
+    font-size: 18px;
+    color: #0282f9;
+}
+
+.social>img {
+    padding-left: 15px;
 }
 </style>

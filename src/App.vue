@@ -20,4 +20,6 @@ export default {
   </div>
 </template>
 
-<style ></style>
+<style lang="scss">
+@use "./styles/general.scss";
+</style>

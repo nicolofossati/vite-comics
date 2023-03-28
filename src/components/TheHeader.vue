@@ -52,39 +52,39 @@ export default {
     </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .header-content {
     display: flex;
     justify-content: space-between;
     max-width: 80%;
     margin: auto;
-}
+    padding: 15px;
 
-.header-content>img {
-    width: 80px;
-    padding: 10px;
+    &>img {
+        width: 80px;
+    }
 }
 
 .nav-bar {
     display: flex;
     align-items: center;
-}
 
-.nav-bar ul {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-}
+    ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
 
-ul li {
-    list-style-type: none;
-    padding-left: 12px;
+        li {
+            list-style-type: none;
+            padding-left: 12px;
 
-}
+        }
+    }
 
-.nav-bar a {
-    text-decoration: none;
-    font-weight: 600;
-    color: #565656;
+    a {
+        text-decoration: none;
+        font-weight: 600;
+        color: #565656;
+    }
 }
 </style>
