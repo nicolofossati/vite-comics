@@ -1,12 +1,13 @@
 <script>
 import TheHeader from './components/TheHeader.vue';
+import Jumbotron from './components/Jumbotron.vue';
 import TheMain from './components/TheMain.vue';
 import Products from './components/Products.vue';
 import TheFooter from './components/TheFooter.vue';
 
 export default {
   components: {
-    TheHeader, TheMain, Products, TheFooter
+    TheHeader, Jumbotron, TheMain, Products, TheFooter
   }
 }
 </script>
@@ -14,6 +15,7 @@ export default {
 <template>
   <div class="container">
     <TheHeader />
+    <Jumbotron />
     <TheMain />
     <Products />
     <TheFooter />

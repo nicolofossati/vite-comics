@@ -9,15 +9,6 @@
 </template>
 
 <style scoped>
-/*   DEBUG */
-.debug h1 {
-    color: white;
-
-}
-
-
-
-/*  FINE DEBUG */
 .main-container {
     background-color: #1c1c1c;
 }
