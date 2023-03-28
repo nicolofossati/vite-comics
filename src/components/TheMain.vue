@@ -1,4 +1,14 @@
 <script>
+import Card from './Card.vue';
+
+export default {
+    components: {
+        Card
+    },
+    props: {
+        titles: Array
+    }
+}
 </script>
 
 <template>
@@ -6,53 +16,8 @@
         <div class="main-content">
             <span class="current-series-tag">CURRENT SERIES</span>
             <div class="current-series-container">
-                <div class="card">
-                    <img src="https://static.dc.com/2023-03/LEGIONOB_Cv1_00111_DIGITAL.jpg?w=640" alt="">
-                    <span>ACTION COMICS</span>
-                </div>
-                <div class="card">
-                    <img src="https://static.dc.com/2023-03/LEGIONOB_Cv1_00111_DIGITAL.jpg?w=640" alt="">
-                    <span>ACTION COMICS</span>
-                </div>
-                <div class="card">
-                    <img src="https://static.dc.com/2023-03/LEGIONOB_Cv1_00111_DIGITAL.jpg?w=640" alt="">
-                    <span>ACTION COMICS</span>
-                </div>
-                <div class="card">
-                    <img src="https://static.dc.com/2023-03/LEGIONOB_Cv1_00111_DIGITAL.jpg?w=640" alt="">
-                    <span>ACTION COMICS</span>
-                </div>
-                <div class="card">
-                    <img src="https://static.dc.com/2023-03/LEGIONOB_Cv1_00111_DIGITAL.jpg?w=640" alt="">
-                    <span>ACTION COMICS</span>
-                </div>
-                <div class="card">
-                    <img src="https://static.dc.com/2023-03/LEGIONOB_Cv1_00111_DIGITAL.jpg?w=640" alt="">
-                    <span>ACTION COMICS</span>
-                </div>
-                <div class="card">
-                    <img src="https://static.dc.com/2023-03/LEGIONOB_Cv1_00111_DIGITAL.jpg?w=640" alt="">
-                    <span>ACTION COMICS</span>
-                </div>
-                <div class="card">
-                    <img src="https://static.dc.com/2023-03/LEGIONOB_Cv1_00111_DIGITAL.jpg?w=640" alt="">
-                    <span>ACTION COMICS</span>
-                </div>
-                <div class="card">
-                    <img src="https://static.dc.com/2023-03/LEGIONOB_Cv1_00111_DIGITAL.jpg?w=640" alt="">
-                    <span>ACTION COMICS</span>
-                </div>
-                <div class="card">
-                    <img src="https://static.dc.com/2023-03/LEGIONOB_Cv1_00111_DIGITAL.jpg?w=640" alt="">
-                    <span>ACTION COMICS</span>
-                </div>
-                <div class="card">
-                    <img src="https://static.dc.com/2023-03/LEGIONOB_Cv1_00111_DIGITAL.jpg?w=640" alt="">
-                    <span>ACTION COMICS</span>
-                </div>
-                <div class="card">
-                    <img src="https://static.dc.com/2023-03/LEGIONOB_Cv1_00111_DIGITAL.jpg?w=640" alt="">
-                    <span>ACTION COMICS</span>
+                <div v-for="title in titles" class="card-wrapper">
+                    <Card :thumb="title.thumb" :series="title.series" />
                 </div>
             </div>
         </div>
@@ -86,45 +51,12 @@
     box-shadow: #1c1c1c;
 }
 
-
 .current-series-container {
     display: flex;
     flex-wrap: wrap;
 }
 
-//   CARD
-
-
-.card {
-    display: flex;
-    flex-direction: column;
-    width: calc(100%/6 - 20px);
-    padding: 10px;
-    margin: 10px;
-
-    img {
-        width: 100%;
-        aspect-ratio: 1/1;
-    }
-
-    span {
-        text-align: center;
-        font-weight: 500;
-        color: white;
-    }
-
+.card-wrapper {
+    display: contents;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-////////////////////
 </style>
